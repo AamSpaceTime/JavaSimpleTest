@@ -7,6 +7,7 @@ package javasimpletest;
 
 import java.util.Scanner;
 import java.io.BufferedReader;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.io.OutputStream;
@@ -99,7 +100,7 @@ public class JavaSimpleTest {
 
 		conn.disconnect();
             
-    } catch(Exception e) {
+    } catch(IOException | RuntimeException e) {
         System.out.println(e.getMessage());
     }
         
